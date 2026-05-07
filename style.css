@@ -1,0 +1,138 @@
+/* style.css */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+    color:#333;
+    padding:20px;
+}
+
+/* HEADER */
+header{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+header h1{
+    color:#006d77;
+    margin-bottom:10px;
+}
+
+header p{
+    color:#555;
+}
+
+/* CARD DESIGN */
+.card{
+    background:white;
+    padding:25px;
+    margin-bottom:25px;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card h2{
+    color:#0a6c74;
+    margin-bottom:20px;
+}
+
+/* RESPONSIVE BOXES */
+.responsive-boxes{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+}
+
+.box{
+    background:#0a9396;
+    color:white;
+    padding:40px;
+    width:200px;
+    text-align:center;
+    border-radius:10px;
+    font-size:20px;
+    font-weight:bold;
+}
+
+/* QUIZ */
+.quiz-container{
+    text-align:center;
+}
+
+#answers button{
+    display:block;
+    width:100%;
+    margin:10px 0;
+    padding:12px;
+    border:none;
+    background:#94d2bd;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+#answers button:hover{
+    background:#52b69a;
+    color:white;
+}
+
+#nextBtn,
+#jokeBtn{
+    margin-top:15px;
+    padding:12px 20px;
+    border:none;
+    background:#005f73;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+#nextBtn:hover,
+#jokeBtn:hover{
+    background:#023047;
+}
+
+/* JOKE BOX */
+.joke-box{
+    margin-top:20px;
+    background:#edf6f9;
+    padding:20px;
+    border-radius:10px;
+    font-size:18px;
+}
+
+/* ================= MEDIA QUERIES ================= */
+
+/* TABLET */
+@media(max-width:768px){
+    .responsive-boxes{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .box{
+        width:80%;
+    }
+}
+
+/* MOBILE */
+@media(max-width:480px){
+    body{
+        padding:10px;
+    }
+
+    header h1{
+        font-size:28px;
+    }
+
+    .box{
+        font-size:18px;
+        padding:30px;
+    }
+}

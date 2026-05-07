@@ -1,0 +1,56 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advanced Styling and JavaScript</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Advanced Styling and JavaScript</h1>
+    <p>Responsive Design • Interactive Quiz • API Fetching</p>
+  </header>
+
+  <!-- ================= RESPONSIVE SECTION ================= -->
+  <section class="card">
+    <h2>1. Responsive Design Using Media Queries</h2>
+
+    <div class="responsive-boxes">
+      <div class="box">Mobile</div>
+      <div class="box">Tablet</div>
+      <div class="box">Desktop</div>
+    </div>
+  </section>
+
+  <!-- ================= QUIZ SECTION ================= -->
+  <section class="card">
+    <h2>2. Interactive Quiz Using JavaScript</h2>
+
+    <div class="quiz-container">
+      <h3 id="question">Question appears here</h3>
+
+      <div id="answers"></div>
+
+      <button id="nextBtn">Next Question</button>
+
+      <p id="score"></p>
+    </div>
+  </section>
+
+  <!-- ================= API SECTION ================= -->
+  <section class="card">
+    <h2>3. Fetch Data from API</h2>
+
+    <button id="jokeBtn">Get Random Joke</button>
+
+    <div class="joke-box">
+      <p id="joke">Click the button to load a joke...</p>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
